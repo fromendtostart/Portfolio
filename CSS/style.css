@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box; /*makes padding better measurable*/
+}
+
+/*root is whole thing under html tag so set variables for it*/
+
+:root{
+    
+    --ff-primary: monospace;
+    --ff-secondary: sans-serif;
+
+    --clr-light: #fff;
+    --clr-dark: #303030;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.5rem;
+    --fs-h3: 2rem;
+
+}
+
+@media (min-width: 1400px){
+    :root{
+        --fs-h1: 4rem;
+        --fs-h2: 3.5rem;
+        --fs-h3: 3rem;
+    }
+}
+
+/*general styles*/
+
+body{
+    background:  var(--clr-light);
+    color: var(--clr-dark);
+    margin : 0;
+    font-family: var(--ff-primary);
+    line-height: 1;
+}
+
+/*make images behave in a nicer way*/
+
+img{
+    display:block;
+    max-width: 100%;
+}
+
+section{
+    padding: 1rem;
+}
+
+h1,h2,h3{
+    line-height: 1;
+}
+
+h1 { font-size: var(--fs-h1)}
+h2 { font-size: var(--fs-h2)}
+h3 { font-size: var(--fs-h3)}
+
+.section-title{
+    background-color: blueviolet;
+    color: magenta;
+}
+
+.project-cards{
+    color : aqua;
+    text-align: center;    
+}
+
+@media (min-width: 1000px){
+    .project-cards{
+        color: var(--clr-light);
+        display: flex ;
+    }   
+}
+
+.card{
+    margin: 1rem;
+    background-color: blueviolet;
+    color: magenta;
+    padding: 1rem;
+}
+
+
+
+
+
