@@ -13,6 +13,8 @@
 
     --clr-light: #fff;
     --clr-dark: #303030;
+    --clr-primary: magenta;
+    --clr-secondary: blueviolet;
 
     --fs-h1: 3rem;
     --fs-h2: 2.5rem;
@@ -27,6 +29,7 @@
         --fs-h3: 3rem;
     }
 }
+ 
 
 /*general styles*/
 
@@ -36,6 +39,7 @@ body{
     margin : 0;
     font-family: var(--ff-primary);
     line-height: 1;
+    font-size: 1.2rem;
 }
 
 /*make images behave in a nicer way*/
@@ -46,11 +50,11 @@ img{
 }
 
 section{
-    padding: 1rem;
+    padding: 0rem;
 }
 
 h1,h2,h3{
-    line-height: 1;
+    margin:0px;
 }
 
 h1 { font-size: var(--fs-h1)}
@@ -58,19 +62,18 @@ h2 { font-size: var(--fs-h2)}
 h3 { font-size: var(--fs-h3)}
 
 .section-title{
-    background-color: blueviolet;
-    color: magenta;
+    color: var(--clr-dark);
+    text-align: center;
 }
 
 .project-cards{
-    color : aqua;
     text-align: center;    
 }
 
-@media (min-width: 1000px){
+@media (min-width: 700px){
     .project-cards{
         color: var(--clr-light);
-        display: flex ;
+        display: flex;
     }   
 }
 
@@ -78,6 +81,28 @@ h3 { font-size: var(--fs-h3)}
     margin: 1rem;
     background-color: blueviolet;
     color: magenta;
+    padding: 1rem;
+    border-radius: 25px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.intro-section{
+    background-color: var(--clr-primary);
+    height: 10rem;
+    margin: 0px;
+}
+
+.project-section{
+    margin: 0px;
+}
+
+.footer
+{
+    background-color: var(--clr-primary);
+    color: var(--clr-secondary);
     padding: 1rem;
 }
 
