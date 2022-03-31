@@ -8,7 +8,7 @@
 
 :root{
     
-    --ff-primary: monospace;
+    --ff-primary: Arial;
     --ff-secondary: sans-serif;
 
     --clr-light: #fff;
@@ -45,12 +45,21 @@ body{
 /*make images behave in a nicer way*/
 
 img{
-    display:block;
-    max-width: 100%;
+    max-width: 40%;
+    max-height: 40%;
+    border-radius: 50%;
+}
+
+@media (min-width : 800px) {
+    img{
+        max-width: 20%;
+        max-height: 20%;
+        border-radius: 50%;
+    }
 }
 
 section{
-    padding: 0rem;
+    padding: 1rem;
 }
 
 h1,h2,h3{
@@ -66,11 +75,23 @@ h3 { font-size: var(--fs-h3)}
     text-align: center;
 }
 
+.section-text
+{
+    background-color: var(--clr-secondary);
+    font-size: 1.5rem;;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1rem;
+    color: var(--clr-primary)
+}
+
 .project-cards{
     text-align: center;    
 }
 
-@media (min-width: 700px){
+@media (min-width: 800px){
     .project-cards{
         color: var(--clr-light);
         display: flex;
@@ -90,9 +111,16 @@ h3 { font-size: var(--fs-h3)}
 }
 
 .intro-section{
-    background-color: var(--clr-primary);
-    height: 10rem;
+    background-color: var(--clr-light);
     margin: 0px;
+}
+
+.intro-contents{
+    margin : 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .project-section{
