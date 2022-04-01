@@ -52,8 +52,8 @@ img{
 
 @media (min-width : 800px) {
     img{
-        max-width: 20%;
-        max-height: 20%;
+        max-width: 10%;
+        max-height: 10%;
         border-radius: 50%;
     }
 }
@@ -103,7 +103,7 @@ h3 { font-size: var(--fs-h3)}
     background-color: blueviolet;
     color: magenta;
     padding: 1rem;
-    border-radius: 25px;
+    border-radius: 0.5rem;
 }
 
 .card:hover{
@@ -129,8 +129,7 @@ h3 { font-size: var(--fs-h3)}
 
 .footer
 {
-    background-color: var(--clr-primary);
-    color: var(--clr-secondary);
+    color: var(--clr-primary);
     padding: 1rem;
 }
 
